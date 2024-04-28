@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: radial-gradient(circle, #331a00, #555);
+}
+
+header{
+  color: #FFF;
+  text-align: center;  
+}
+
+#warning{
+  color: red;  
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 5%;  
+}
+
+.left-sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  /* padding: 5px; */
+  background: beige;
+  border-radius: 10px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.uj_jatek {
+  border: 1px solid #FFF;
+  border-radius: 5px;
+  padding: 5px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 1rem;
+}
+
+select {  
+  background-color: #99ffff;
+  margin: 5px;
+  border-radius: 6px;
+  font-size: 1rem;  
+  padding: 5px;
+  border: none;
+  outline: none;  
+}
+
+.speed {
+  border: 1px solid #99ffff;
+  border-radius: 5px;  
+  width: 100%;
+}
+
+.speed label {
+  font-size: 0.8rem;
+  font-weight: light;
+  color: blue;
+}
+
+#speedRange {
+  width: 100%;
+  height: 4px;
+}
+
+button { 
+  cursor: pointer;
+  padding: 6px 16px; 
+  background-color: #99ffff;
+  margin: 3px;
+  border-radius: 6px;
+  font-size: 1rem;   
+  border: 1px solid cyan;
+  outline: none; 
+}
+
+button:hover {
+  background: bisque;
+  border: 1px solid #99ffff;
+}
+
+.playground {
+  height: 70vh;
+  background: white;
+  display: flex;
+  flex: 70%;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 8px;
+  gap: 0;
+  padding: 2px 5px;
+}
+
+.torony {
+  min-width: 33%;
+  height: 98%;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;  
+}
+
+.rud {
+  width: 10px;
+  height: 60%;
+  background: #000;
+  position: absolute;
+  border-radius: 6px;
+}
+
+.alap {
+  width: 100%;
+  height: 24px;
+  background: #331a00;
+  text-align: center;
+  /* border-radius: 10px; */
+  z-index: 1;
+  color: white;
+}
+
+.korong {
+  height: 30px;
+  border: 1px solid #331a00;
+  border-radius: 15px;
+  z-index: 1;
+  text-align: center;
+  color: white;
+  cursor: grab;
+}
+
+.mozgatva {
+  opacity: 0.3;
+}
+
+@media screen and (max-width: 768px) {  
+  .left-sidebar{
+      /* flex: 50%;  */
+      width: 50%;
+      height: 300px;        
+  }
+  .playground{
+      flex: 100%;        
+  }
+  
+  button{
+    font-size: 0.8rem;
+    padding: 4px 8px; 
+  }
+
+  header p, select {
+    font-size: 0.8rem;
+  }
+}

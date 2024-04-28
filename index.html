@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+  <link rel="shortcut icon" href="logo.svg" type="image/x-icon">
+  <title>Hanoi Tornyai</title>
+  <script src='index.js' type="module" defer></script>
+</head>
+
+<body>
+  <header>
+    <h3><b>Hanoi Tornyai</b> <span id="warning"></span></h3>
+    <p>Pakold át a korongokat a CÉL nevű rúdra. Egyszerre csak egy korongot mozgathatsz, és nem helyezhetsz nagyobb korongot egy kisebb fölé.</p>  
+  </header>
+
+  <div class="container">
+    <div class="left-sidebar">
+      <div class="uj_jatek">
+        <label for="korongok">Korongok száma:</label>
+        <select name="korongok" id="korongSelect">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3" selected>3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+        </select>
+        <button id="ujraGomb">&nbsp; ÚJ JÁTÉK &nbsp;</button>
+      </div>
+      <div class="speed">
+        <label for="speedRange">Sebesség</label>
+        <input type="range" id="speedRange" step="1" max="100" value="100">
+      </div>
+      <div class="gombok">
+        <button id="solveGomb">MEGOLDÁS</button>
+      </div>
+    </div>
+    <div class="playground">
+
+      <div class="torony">
+        <div class="rud"></div>
+        <div class="alap"></div>
+      </div>
+      <div class="torony">
+        <div class="rud"></div>
+        <div class="alap"></div>
+      </div>
+      <div class="torony">
+        <div class="rud"></div>
+        <div class="alap"></div>
+      </div>
+
+    </div>
+  </div>
+</body>
+
+</html>
