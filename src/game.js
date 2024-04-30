@@ -218,8 +218,7 @@ class Game {
     })
 
     // gombra kattintva új játékot indít
-    ujraGomb.addEventListener('click', () => {
-      //window.location.reload();
+    ujraGomb.addEventListener('click', () => {     
       document.getElementById('warning').innerHTML = '';
       size = korongSelect.selectedIndex + 1;
       start();
