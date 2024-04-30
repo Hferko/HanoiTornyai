@@ -217,9 +217,10 @@ class Game {
       speed = event.target.value;
     })
 
-    // gombra kattintva új játékot indít, de újra kell töltenem az oldalt és resetelni a cach-t
+    // gombra kattintva új játékot indít
     ujraGomb.addEventListener('click', () => {
-      window.location.reload();
+      //window.location.reload();
+      document.getElementById('warning').innerHTML = '';
       size = korongSelect.selectedIndex + 1;
       start();
     })
